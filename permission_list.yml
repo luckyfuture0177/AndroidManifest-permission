@@ -1,0 +1,1308 @@
+ACCEPT_HANDOVER:
+  api_name: ACCEPT_HANDOVER
+  num: 1
+  api_level: '28'
+  Description: Allows a calling app to continue a call which was started in another
+    app.  An example is a video calling app that wants to continue a voice call on
+    the user's mobile network.
+  Protection_level: dangerous
+  Is_Deprecated: false
+
+ACCESS_BACKGROUND_LOCATION:
+  api_name: ACCESS_BACKGROUND_LOCATION
+  num: 2
+  api_level: '29'
+  Description: "Allows an app to access location in the background. If you're requesting\
+    \ this permission, you must also request either ACCESS_COARSE_LOCATION or ACCESS_FINE_LOCATION.\
+    \ Requesting this permission by itself doesn't give you location access. "
+  Protection_level: 'dangerous '
+  Is_Deprecated: false
+
+ACCESS_CHECKIN_PROPERTIES:
+  api_name: ACCESS_CHECKIN_PROPERTIES
+  num: 3
+  api_level: '1'
+  Description: 'Allows read/write access to the "properties" table in the checkin
+    database, to change values that get uploaded. '
+  Protection_level: Not for use by third-party applications
+  Is_Deprecated: false
+
+ACCESS_COARSE_LOCATION:
+  api_name: ACCESS_COARSE_LOCATION
+  num: 4
+  api_level: '1'
+  Description: 'Allows an app to access approximate location. Alternatively, you might
+    want ACCESS_FINE_LOCATION. '
+  Protection_level: dangerous
+  Is_Deprecated: false
+ACCESS_FINE_LOCATION:
+  api_name: ACCESS_FINE_LOCATION
+  num: 5
+  api_level: '1'
+  Description: 'Allows an app to access precise location. Alternatively, you might
+    want ACCESS_COARSE_LOCATION. '
+  Protection_level: dangerous
+  Is_Deprecated: false
+ACCESS_LOCATION_EXTRA_COMMANDS:
+  api_name: ACCESS_LOCATION_EXTRA_COMMANDS
+  num: 6
+  api_level: '1'
+  Description: 'Allows an application to access extra location provider commands. '
+  Protection_level: normal
+  Is_Deprecated: false
+ACCESS_MEDIA_LOCATION:
+  api_name: ACCESS_MEDIA_LOCATION
+  num: 7
+  api_level: '29'
+  Description: "Allows an application to access any geographic locations persisted\
+    \ in the user's shared collection. "
+  Protection_level: dangerous
+  Is_Deprecated: false
+ACCESS_NETWORK_STATE:
+  api_name: ACCESS_NETWORK_STATE
+  num: 8
+  api_level: '1'
+  Description: 'Allows applications to access information about networks. '
+  Protection_level: normal
+  Is_Deprecated: false
+ACCESS_NOTIFICATION_POLICY:
+  api_name: ACCESS_NOTIFICATION_POLICY
+  num: 9
+  api_level: '23'
+  Description: 'Marker permission for applications that wish to access notification
+    policy. This permission is not supported on managed profiles. '
+  Protection_level: normal
+  Is_Deprecated: false
+ACCESS_WIFI_STATE:
+  api_name: ACCESS_WIFI_STATE
+  num: 10
+  api_level: '1'
+  Description: 'Allows applications to access information about Wi-Fi networks. '
+  Protection_level: normal
+  Is_Deprecated: false
+ACCOUNT_MANAGER:
+  api_name: ACCOUNT_MANAGER
+  num: 11
+  api_level: '5'
+  Description: 'Allows applications to call into AccountAuthenticators. '
+  Protection_level: Not for use by third-party applications
+  Is_Deprecated: false
+ACTIVITY_RECOGNITION:
+  api_name: ACTIVITY_RECOGNITION
+  num: 12
+  api_level: '29'
+  Description: 'Allows an application to recognize physical activity. '
+  Protection_level: dangerous
+  Is_Deprecated: false
+ADD_VOICEMAIL:
+  api_name: ADD_VOICEMAIL
+  num: 13
+  api_level: '14'
+  Description: 'Allows an application to add voicemails into the system. '
+  Protection_level: dangerous
+  Is_Deprecated: false
+ANSWER_PHONE_CALLS:
+  api_name: ANSWER_PHONE_CALLS
+  num: 14
+  api_level: '26'
+  Description: 'Allows the app to answer an incoming phone call. '
+  Protection_level: dangerous
+  Is_Deprecated: false
+BATTERY_STATS:
+  api_name: BATTERY_STATS
+  num: 15
+  api_level: '1'
+  Description: 'Allows an application to collect battery statistics '
+  Protection_level: signature|privileged|development
+  Is_Deprecated: false
+BIND_ACCESSIBILITY_SERVICE:
+  api_name: BIND_ACCESSIBILITY_SERVICE
+  num: 16
+  api_level: '16'
+  Description: 'Must be required by an AccessibilityService, to ensure that only the
+    system can bind to it. '
+  Protection_level: signature
+  Is_Deprecated: false
+BIND_APPWIDGET:
+  api_name: BIND_APPWIDGET
+  num: 17
+  api_level: '3'
+  Description: "Allows an application to tell the AppWidget service which application\
+    \ can access AppWidget's data.  The normal user flow is that a user picks an AppWidget\
+    \ to go into a particular host, thereby giving that host application access to\
+    \ the private data from the AppWidget app. An application that has this permission\
+    \ should honor that contract. "
+  Protection_level: Not for use by third-party applications
+  Is_Deprecated: false
+BIND_AUTOFILL_SERVICE:
+  api_name: BIND_AUTOFILL_SERVICE
+  num: 18
+  api_level: '26'
+  Description: 'Must be required by a AutofillService, to ensure that only the system
+    can bind to it. '
+  Protection_level: signature
+  Is_Deprecated: false
+BIND_CALL_REDIRECTION_SERVICE:
+  api_name: BIND_CALL_REDIRECTION_SERVICE
+  num: 19
+  api_level: '29'
+  Description: 'Must be required by a CallRedirectionService, to ensure that only
+    the system can bind to it. '
+  Protection_level: signature|privileged
+  Is_Deprecated: false
+BIND_CARRIER_MESSAGING_CLIENT_SERVICE:
+  api_name: BIND_CARRIER_MESSAGING_CLIENT_SERVICE
+  num: 20
+  api_level: '29'
+  Description: 'A subclass of CarrierMessagingClientService must be protected with
+    this permission. '
+  Protection_level: signature
+  Is_Deprecated: false
+BIND_CARRIER_MESSAGING_SERVICE:
+  api_name: BIND_CARRIER_MESSAGING_SERVICE
+  num: 21
+  api_level: '22'
+  Description: '        This constant was deprecated      in API level 23.    Use
+    BIND_CARRIER_SERVICES instead    '
+  Protection_level: This permission was deprecated
+  Is_Deprecated: true
+BIND_CARRIER_SERVICES:
+  api_name: BIND_CARRIER_SERVICES
+  num: 22
+  api_level: '23'
+  Description: 'The system process that is allowed to bind to services in carrier
+    apps will have this permission. Carrier apps should use this permission to protect
+    their services that only the system is allowed to bind to. '
+  Protection_level: signature|privileged
+  Is_Deprecated: false
+BIND_CHOOSER_TARGET_SERVICE:
+  api_name: BIND_CHOOSER_TARGET_SERVICE
+  num: 23
+  api_level: '23'
+  Description: '        This constant was deprecated      in API level 30.    For
+    publishing direct share targets, please follow the instructions in https://developer.android.com/training/sharing/receive.html#providing-direct-share-targets
+    instead.    '
+  Protection_level: signature
+  Is_Deprecated: true
+BIND_CONDITION_PROVIDER_SERVICE:
+  api_name: BIND_CONDITION_PROVIDER_SERVICE
+  num: 24
+  api_level: '24'
+  Description: 'Must be required by a ConditionProviderService, to ensure that only
+    the system can bind to it. '
+  Protection_level: signature
+  Is_Deprecated: false
+BIND_CONTROLS:
+  api_name: BIND_CONTROLS
+  num: 25
+  api_level: '30'
+  Description: 'Allows SystemUI to request third party controls. '
+  Protection_level: Not for use by third-party applications
+  Is_Deprecated: false
+BIND_DEVICE_ADMIN:
+  api_name: BIND_DEVICE_ADMIN
+  num: 26
+  api_level: '8'
+  Description: 'Must be required by device administration receiver, to ensure that
+    only the system can interact with it. '
+  Protection_level: signature
+  Is_Deprecated: false
+BIND_DREAM_SERVICE:
+  api_name: BIND_DREAM_SERVICE
+  num: 27
+  api_level: '21'
+  Description: 'Must be required by an DreamService, to ensure that only the system
+    can bind to it. '
+  Protection_level: signature
+  Is_Deprecated: false
+BIND_INCALL_SERVICE:
+  api_name: BIND_INCALL_SERVICE
+  num: 28
+  api_level: '23'
+  Description: 'Must be required by a InCallService, to ensure that only the system
+    can bind to it. '
+  Protection_level: signature|privileged
+  Is_Deprecated: false
+BIND_INPUT_METHOD:
+  api_name: BIND_INPUT_METHOD
+  num: 29
+  api_level: '3'
+  Description: 'Must be required by an InputMethodService, to ensure that only the
+    system can bind to it. '
+  Protection_level: signature
+  Is_Deprecated: false
+BIND_MIDI_DEVICE_SERVICE:
+  api_name: BIND_MIDI_DEVICE_SERVICE
+  num: 30
+  api_level: '23'
+  Description: 'Must be required by an MidiDeviceService, to ensure that only the
+    system can bind to it. '
+  Protection_level: signature
+  Is_Deprecated: false
+BIND_NFC_SERVICE:
+  api_name: BIND_NFC_SERVICE
+  num: 31
+  api_level: '19'
+  Description: 'Must be required by a HostApduService or OffHostApduService to ensure
+    that only the system can bind to it. '
+  Protection_level: signature
+  Is_Deprecated: false
+BIND_NOTIFICATION_LISTENER_SERVICE:
+  api_name: BIND_NOTIFICATION_LISTENER_SERVICE
+  num: 32
+  api_level: '18'
+  Description: 'Must be required by an NotificationListenerService, to ensure that
+    only the system can bind to it. '
+  Protection_level: signature
+  Is_Deprecated: false
+BIND_PRINT_SERVICE:
+  api_name: BIND_PRINT_SERVICE
+  num: 33
+  api_level: '19'
+  Description: 'Must be required by a PrintService, to ensure that only the system
+    can bind to it. '
+  Protection_level: signature
+  Is_Deprecated: false
+BIND_QUICK_ACCESS_WALLET_SERVICE:
+  api_name: BIND_QUICK_ACCESS_WALLET_SERVICE
+  num: 34
+  api_level: '30'
+  Description: 'Must be required by a QuickAccessWalletService to ensure that only
+    the system can bind to it. '
+  Protection_level: signature
+  Is_Deprecated: false
+BIND_QUICK_SETTINGS_TILE:
+  api_name: BIND_QUICK_SETTINGS_TILE
+  num: 35
+  api_level: '24'
+  Description: 'Allows an application to bind to third party quick settings tiles. '
+  Protection_level: Not for use by third-party applications
+  Is_Deprecated: false
+BIND_REMOTEVIEWS:
+  api_name: BIND_REMOTEVIEWS
+  num: 36
+  api_level: '11'
+  Description: 'Must be required by a RemoteViewsService, to ensure that only the
+    system can bind to it. '
+  Protection_level: signature|privileged
+  Is_Deprecated: false
+BIND_SCREENING_SERVICE:
+  api_name: BIND_SCREENING_SERVICE
+  num: 37
+  api_level: '24'
+  Description: 'Must be required by a CallScreeningService, to ensure that only the
+    system can bind to it. '
+  Protection_level: signature|privileged
+  Is_Deprecated: false
+BIND_TELECOM_CONNECTION_SERVICE:
+  api_name: BIND_TELECOM_CONNECTION_SERVICE
+  num: 38
+  api_level: '23'
+  Description: 'Must be required by a ConnectionService, to ensure that only the system
+    can bind to it. '
+  Protection_level: signature|privileged
+  Is_Deprecated: false
+BIND_TEXT_SERVICE:
+  api_name: BIND_TEXT_SERVICE
+  num: 39
+  api_level: '14'
+  Description: 'Must be required by a TextService (e.g.&nbsp;SpellCheckerService)
+    to ensure that only the system can bind to it. '
+  Protection_level: signature
+  Is_Deprecated: false
+BIND_TV_INPUT:
+  api_name: BIND_TV_INPUT
+  num: 40
+  api_level: '21'
+  Description: 'Must be required by a TvInputService to ensure that only the system
+    can bind to it. '
+  Protection_level: signature|privileged
+  Is_Deprecated: false
+BIND_VISUAL_VOICEMAIL_SERVICE:
+  api_name: BIND_VISUAL_VOICEMAIL_SERVICE
+  num: 41
+  api_level: '26'
+  Description: 'Must be required by a link VisualVoicemailService to ensure that only
+    the system can bind to it. '
+  Protection_level: signature|privileged
+  Is_Deprecated: false
+BIND_VOICE_INTERACTION:
+  api_name: BIND_VOICE_INTERACTION
+  num: 42
+  api_level: '21'
+  Description: 'Must be required by a VoiceInteractionService, to ensure that only
+    the system can bind to it. '
+  Protection_level: signature
+  Is_Deprecated: false
+BIND_VPN_SERVICE:
+  api_name: BIND_VPN_SERVICE
+  num: 43
+  api_level: '14'
+  Description: 'Must be required by a VpnService, to ensure that only the system can
+    bind to it. '
+  Protection_level: signature
+  Is_Deprecated: false
+BIND_VR_LISTENER_SERVICE:
+  api_name: BIND_VR_LISTENER_SERVICE
+  num: 44
+  api_level: '24'
+  Description: 'Must be required by an VrListenerService, to ensure that only the
+    system can bind to it. '
+  Protection_level: signature
+  Is_Deprecated: false
+BIND_WALLPAPER:
+  api_name: BIND_WALLPAPER
+  num: 45
+  api_level: '8'
+  Description: 'Must be required by a WallpaperService, to ensure that only the system
+    can bind to it. '
+  Protection_level: signature|privileged
+  Is_Deprecated: false
+BLUETOOTH:
+  api_name: BLUETOOTH
+  num: 46
+  api_level: '1'
+  Description: 'Allows applications to connect to paired bluetooth devices. '
+  Protection_level: normal
+  Is_Deprecated: false
+BLUETOOTH_ADMIN:
+  api_name: BLUETOOTH_ADMIN
+  num: 47
+  api_level: '1'
+  Description: 'Allows applications to discover and pair bluetooth devices. '
+  Protection_level: normal
+  Is_Deprecated: false
+BLUETOOTH_PRIVILEGED:
+  api_name: BLUETOOTH_PRIVILEGED
+  num: 48
+  api_level: '19'
+  Description: 'Allows applications to pair bluetooth devices without user interaction,
+    and to allow or disallow phonebook access or message access. '
+  Protection_level: Not for use by third-party applications
+  Is_Deprecated: false
+BODY_SENSORS:
+  api_name: BODY_SENSORS
+  num: 49
+  api_level: '20'
+  Description: 'Allows an application to access data from sensors that the user uses
+    to measure what is happening inside their body, such as heart rate. '
+  Protection_level: dangerous
+  Is_Deprecated: false
+BROADCAST_PACKAGE_REMOVED:
+  api_name: BROADCAST_PACKAGE_REMOVED
+  num: 50
+  api_level: '1'
+  Description: 'Allows an application to broadcast a notification that an application
+    package has been removed. '
+  Protection_level: Not for use by third-party applications
+  Is_Deprecated: false
+BROADCAST_SMS:
+  api_name: BROADCAST_SMS
+  num: 51
+  api_level: '2'
+  Description: 'Allows an application to broadcast an SMS receipt notification. '
+  Protection_level: Not for use by third-party applications
+  Is_Deprecated: false
+BROADCAST_STICKY:
+  api_name: BROADCAST_STICKY
+  num: 52
+  api_level: '1'
+  Description: 'Allows an application to broadcast sticky intents.  These are broadcasts
+    whose data is held by the system after being finished, so that clients can quickly
+    retrieve that data without having to wait for the next broadcast. '
+  Protection_level: normal
+  Is_Deprecated: false
+BROADCAST_WAP_PUSH:
+  api_name: BROADCAST_WAP_PUSH
+  num: 53
+  api_level: '2'
+  Description: 'Allows an application to broadcast a WAP PUSH receipt notification. '
+  Protection_level: Not for use by third-party applications
+  Is_Deprecated: false
+CALL_COMPANION_APP:
+  api_name: CALL_COMPANION_APP
+  num: 54
+  api_level: '29'
+  Description: "Allows an app which implements the InCallService API to be eligible\
+    \ to be enabled as a calling companion app. This means that the Telecom framework\
+    \ will bind to the app's InCallService implementation when there are calls active.\
+    \ The app can use the InCallService API to view information about calls on the\
+    \ system and control these calls. "
+  Protection_level: normal
+  Is_Deprecated: false
+CALL_PHONE:
+  api_name: CALL_PHONE
+  num: 55
+  api_level: '1'
+  Description: 'Allows an application to initiate a phone call without going through
+    the Dialer user interface for the user to confirm the call. '
+  Protection_level: dangerous
+  Is_Deprecated: false
+CALL_PRIVILEGED:
+  api_name: CALL_PRIVILEGED
+  num: 56
+  api_level: '1'
+  Description: 'Allows an application to call any phone number, including emergency
+    numbers, without going through the Dialer user interface for the user to confirm
+    the call being placed. '
+  Protection_level: Not for use by third-party applications
+  Is_Deprecated: false
+CAMERA:
+  api_name: CAMERA
+  num: 57
+  api_level: '1'
+  Description: 'Required to be able to access the camera device. '
+  Protection_level: dangerous
+  Is_Deprecated: false
+CAPTURE_AUDIO_OUTPUT:
+  api_name: CAPTURE_AUDIO_OUTPUT
+  num: 58
+  api_level: '19'
+  Description: 'Allows an application to capture audio output. Use the CAPTURE_MEDIA_OUTPUT
+    permission if only the USAGE_UNKNOWN), USAGE_MEDIA) or USAGE_GAME) usages are
+    intended to be captured. '
+  Protection_level: Not for use by third-party applications
+  Is_Deprecated: false
+CHANGE_COMPONENT_ENABLED_STATE:
+  api_name: CHANGE_COMPONENT_ENABLED_STATE
+  num: 59
+  api_level: '1'
+  Description: 'Allows an application to change whether an application component (other
+    than its own) is enabled or not. '
+  Protection_level: Not for use by third-party applications
+  Is_Deprecated: false
+CHANGE_CONFIGURATION:
+  api_name: CHANGE_CONFIGURATION
+  num: 60
+  api_level: '1'
+  Description: 'Allows an application to modify the current configuration, such as
+    locale. '
+  Protection_level: signature|privileged|development
+  Is_Deprecated: false
+CHANGE_NETWORK_STATE:
+  api_name: CHANGE_NETWORK_STATE
+  num: 61
+  api_level: '1'
+  Description: 'Allows applications to change network connectivity state. '
+  Protection_level: normal
+  Is_Deprecated: false
+CHANGE_WIFI_MULTICAST_STATE:
+  api_name: CHANGE_WIFI_MULTICAST_STATE
+  num: 62
+  api_level: '4'
+  Description: 'Allows applications to enter Wi-Fi Multicast mode. '
+  Protection_level: normal
+  Is_Deprecated: false
+CHANGE_WIFI_STATE:
+  api_name: CHANGE_WIFI_STATE
+  num: 63
+  api_level: '1'
+  Description: 'Allows applications to change Wi-Fi connectivity state. '
+  Protection_level: normal
+  Is_Deprecated: false
+CLEAR_APP_CACHE:
+  api_name: CLEAR_APP_CACHE
+  num: 64
+  api_level: '1'
+  Description: 'Allows an application to clear the caches of all installed applications
+    on the device. '
+  Protection_level: signature|privileged
+  Is_Deprecated: false
+CONTROL_LOCATION_UPDATES:
+  api_name: CONTROL_LOCATION_UPDATES
+  num: 65
+  api_level: '1'
+  Description: 'Allows enabling/disabling location update notifications from the radio. '
+  Protection_level: Not for use by third-party applications
+  Is_Deprecated: false
+DELETE_CACHE_FILES:
+  api_name: DELETE_CACHE_FILES
+  num: 66
+  api_level: '1'
+  Description: "Old permission for deleting an app's cache files, no longer used,\
+    \ but signals for us to quietly ignore calls instead of throwing an exception. "
+  Protection_level: signature|privileged
+  Is_Deprecated: false
+DELETE_PACKAGES:
+  api_name: DELETE_PACKAGES
+  num: 67
+  api_level: '1'
+  Description: 'Allows an application to delete packages. '
+  Protection_level: Not for use by third-party applications
+  Is_Deprecated: false
+DIAGNOSTIC:
+  api_name: DIAGNOSTIC
+  num: 68
+  api_level: '1'
+  Description: 'Allows applications to RW to diagnostic resources. '
+  Protection_level: Not for use by third-party applications
+  Is_Deprecated: false
+DISABLE_KEYGUARD:
+  api_name: DISABLE_KEYGUARD
+  num: 69
+  api_level: '1'
+  Description: 'Allows applications to disable the keyguard if it is not secure. '
+  Protection_level: normal
+  Is_Deprecated: false
+DUMP:
+  api_name: DUMP
+  num: 70
+  api_level: '1'
+  Description: 'Allows an application to retrieve state dump information from system
+    services. '
+  Protection_level: Not for use by third-party applications
+  Is_Deprecated: false
+EXPAND_STATUS_BAR:
+  api_name: EXPAND_STATUS_BAR
+  num: 71
+  api_level: '1'
+  Description: 'Allows an application to expand or collapse the status bar. '
+  Protection_level: normal
+  Is_Deprecated: false
+FACTORY_TEST:
+  api_name: FACTORY_TEST
+  num: 72
+  api_level: '1'
+  Description: 'Run as a manufacturer test application, running as the root user.
+    Only available when the device is running in manufacturer test mode. '
+  Protection_level: Not for use by third-party applications
+  Is_Deprecated: false
+FOREGROUND_SERVICE:
+  api_name: FOREGROUND_SERVICE
+  num: 73
+  api_level: '28'
+  Description: 'Allows a regular application to use Service.startForeground. '
+  Protection_level: normal
+  Is_Deprecated: false
+GET_ACCOUNTS:
+  api_name: GET_ACCOUNTS
+  num: 74
+  api_level: '1'
+  Description: 'Allows access to the list of accounts in the Accounts Service. Note:
+    Beginning with Android 6.0 (API level 23), if an app shares the signature of the
+    authenticator that manages an account, it does not need "GET_ACCOUNTS" permission
+    to read information about that account. On Android 5.1 and lower, all apps need
+    "GET_ACCOUNTS" permission to read information about any account. '
+  Protection_level: dangerous
+  Is_Deprecated: false
+GET_ACCOUNTS_PRIVILEGED:
+  api_name: GET_ACCOUNTS_PRIVILEGED
+  num: 75
+  api_level: '23'
+  Description: 'Allows access to the list of accounts in the Accounts Service. '
+  Protection_level: signature|privileged
+  Is_Deprecated: false
+GET_PACKAGE_SIZE:
+  api_name: GET_PACKAGE_SIZE
+  num: 76
+  api_level: '1'
+  Description: 'Allows an application to find out the space used by any package. '
+  Protection_level: normal
+  Is_Deprecated: false
+GET_TASKS:
+  api_name: GET_TASKS
+  num: 77
+  api_level: '1'
+  Description: '        This constant was deprecated      in API level 21.    No longer
+    enforced.    '
+  Protection_level: This permission was deprecated
+  Is_Deprecated: true
+GLOBAL_SEARCH:
+  api_name: GLOBAL_SEARCH
+  num: 78
+  api_level: '4'
+  Description: 'This permission can be used on content providers to allow the global
+    search system to access their data.  Typically it used when the provider has some
+    permissions protecting it (which global search would not be expected to hold),
+    and added as a read-only permission to the path in the provider where global search
+    queries are performed.  This permission can not be held by regular applications;
+    it is used by applications to protect themselves from everyone else besides global
+    search. '
+  Protection_level: signature|privileged
+  Is_Deprecated: false
+INSTALL_LOCATION_PROVIDER:
+  api_name: INSTALL_LOCATION_PROVIDER
+  num: 79
+  api_level: '4'
+  Description: 'Allows an application to install a location provider into the Location
+    Manager. '
+  Protection_level: Not for use by third-party applications
+  Is_Deprecated: false
+INSTALL_PACKAGES:
+  api_name: INSTALL_PACKAGES
+  num: 80
+  api_level: '1'
+  Description: 'Allows an application to install packages. '
+  Protection_level: Not for use by third-party applications
+  Is_Deprecated: false
+INSTALL_SHORTCUT:
+  api_name: INSTALL_SHORTCUT
+  num: 81
+  api_level: '19'
+  Description: 'Allows an application to install a shortcut in Launcher. '
+  Protection_level: normal
+  Is_Deprecated: false
+INSTANT_APP_FOREGROUND_SERVICE:
+  api_name: INSTANT_APP_FOREGROUND_SERVICE
+  num: 82
+  api_level: '26'
+  Description: 'Allows an instant app to create foreground services. '
+  Protection_level: signature|development|instant|appop
+  Is_Deprecated: false
+INTERACT_ACROSS_PROFILES:
+  api_name: INTERACT_ACROSS_PROFILES
+  num: 83
+  api_level: '30'
+  Description: 'Allows interaction across profiles in the same profile group.          '
+  Protection_level: Not for use by third-party applications
+  Is_Deprecated: false
+INTERNET:
+  api_name: INTERNET
+  num: 84
+  api_level: '1'
+  Description: 'Allows applications to open network sockets. '
+  Protection_level: normal
+  Is_Deprecated: false
+KILL_BACKGROUND_PROCESSES:
+  api_name: KILL_BACKGROUND_PROCESSES
+  num: 85
+  api_level: '8'
+  Description: 'Allows an application to call ActivityManager.killBackgroundProcesses(String). '
+  Protection_level: normal
+  Is_Deprecated: false
+LOADER_USAGE_STATS:
+  api_name: LOADER_USAGE_STATS
+  num: 86
+  api_level: '30'
+  Description: "Allows a data loader to read a package's access logs. The access logs\
+    \ contain the set of pages referenced over time. "
+  Protection_level: 'signature|privileged|appop '
+  Is_Deprecated: false
+LOCATION_HARDWARE:
+  api_name: LOCATION_HARDWARE
+  num: 87
+  api_level: '18'
+  Description: 'Allows an application to use location features in hardware, such as
+    the geofencing api. '
+  Protection_level: Not for use by third-party applications
+  Is_Deprecated: false
+MANAGE_DOCUMENTS:
+  api_name: MANAGE_DOCUMENTS
+  num: 88
+  api_level: '19'
+  Description: 'Allows an application to manage access to documents, usually as part
+    of a document picker. '
+  Protection_level: Not for use by third-party applications
+  Is_Deprecated: false
+MANAGE_EXTERNAL_STORAGE:
+  api_name: MANAGE_EXTERNAL_STORAGE
+  num: 89
+  api_level: '30'
+  Description: 'Allows an application a broad access to external storage in scoped
+    storage. Intended to be used by few apps that need to manage files on behalf of
+    the users. '
+  Protection_level: signature|appop|preinstalled
+  Is_Deprecated: false
+MANAGE_OWN_CALLS:
+  api_name: MANAGE_OWN_CALLS
+  num: 90
+  api_level: '26'
+  Description: 'Allows a calling application which manages it own calls through the
+    self-managed ConnectionService APIs.  See PhoneAccount.CAPABILITY_SELF_MANAGED
+    for more information on the self-managed ConnectionService APIs. '
+  Protection_level: normal
+  Is_Deprecated: false
+MASTER_CLEAR:
+  api_name: MASTER_CLEAR
+  num: 91
+  api_level: '1'
+  Description: 'Not for use by third-party applications.          '
+  Protection_level: Not for use by third-party applications
+  Is_Deprecated: false
+MEDIA_CONTENT_CONTROL:
+  api_name: MEDIA_CONTENT_CONTROL
+  num: 92
+  api_level: '19'
+  Description: 'Allows an application to know what content is playing and control
+    its playback. '
+  Protection_level: Not for use by third-party applications
+  Is_Deprecated: false
+MODIFY_AUDIO_SETTINGS:
+  api_name: MODIFY_AUDIO_SETTINGS
+  num: 93
+  api_level: '1'
+  Description: 'Allows an application to modify global audio settings. '
+  Protection_level: normal
+  Is_Deprecated: false
+MODIFY_PHONE_STATE:
+  api_name: MODIFY_PHONE_STATE
+  num: 94
+  api_level: '1'
+  Description: 'Allows modification of the telephony state - power on, mmi, etc. Does
+    not include placing calls. '
+  Protection_level: Not for use by third-party applications
+  Is_Deprecated: false
+MOUNT_FORMAT_FILESYSTEMS:
+  api_name: MOUNT_FORMAT_FILESYSTEMS
+  num: 95
+  api_level: '3'
+  Description: 'Allows formatting file systems for removable storage. '
+  Protection_level: Not for use by third-party applications
+  Is_Deprecated: false
+MOUNT_UNMOUNT_FILESYSTEMS:
+  api_name: MOUNT_UNMOUNT_FILESYSTEMS
+  num: 96
+  api_level: '1'
+  Description: 'Allows mounting and unmounting file systems for removable storage. '
+  Protection_level: Not for use by third-party applications
+  Is_Deprecated: false
+NFC:
+  api_name: NFC
+  num: 97
+  api_level: '9'
+  Description: 'Allows applications to perform I/O operations over NFC. '
+  Protection_level: normal
+  Is_Deprecated: false
+NFC_PREFERRED_PAYMENT_INFO:
+  api_name: NFC_PREFERRED_PAYMENT_INFO
+  num: 98
+  api_level: '30'
+  Description: 'Allows applications to receive NFC preferred payment service information. '
+  Protection_level: normal
+  Is_Deprecated: false
+NFC_TRANSACTION_EVENT:
+  api_name: NFC_TRANSACTION_EVENT
+  num: 99
+  api_level: '28'
+  Description: 'Allows applications to receive NFC transaction events. '
+  Protection_level: normal
+  Is_Deprecated: false
+PACKAGE_USAGE_STATS:
+  api_name: PACKAGE_USAGE_STATS
+  num: 100
+  api_level: '23'
+  Description: 'Allows an application to collect component usage statistics '
+  Protection_level: signature|privileged|development|appop|retailDemo
+  Is_Deprecated: false
+PERSISTENT_ACTIVITY:
+  api_name: PERSISTENT_ACTIVITY
+  num: 101
+  api_level: '1'
+  Description: '        This constant was deprecated      in API level 15.    This
+    functionality will be removed in the future; please do not use. Allow an application
+    to make its activities persistent.    '
+  Protection_level: This permission was deprecated
+  Is_Deprecated: true
+PROCESS_OUTGOING_CALLS:
+  api_name: PROCESS_OUTGOING_CALLS
+  num: 102
+  api_level: '1'
+  Description: '        This constant was deprecated      in API level 29.    Applications
+    should use CallRedirectionService instead of the Intent.ACTION_NEW_OUTGOING_CALL
+    broadcast.    '
+  Protection_level: 'dangerous '
+  Is_Deprecated: true
+QUERY_ALL_PACKAGES:
+  api_name: QUERY_ALL_PACKAGES
+  num: 103
+  api_level: '30'
+  Description: 'Allows query of any normal app on the device, regardless of manifest
+    declarations. '
+  Protection_level: normal
+  Is_Deprecated: false
+READ_CALENDAR:
+  api_name: READ_CALENDAR
+  num: 104
+  api_level: '1'
+  Description: "Allows an application to read the user's calendar data. "
+  Protection_level: dangerous
+  Is_Deprecated: false
+READ_CALL_LOG:
+  api_name: READ_CALL_LOG
+  num: 105
+  api_level: '16'
+  Description: "Allows an application to read the user's call log. Note: If your app\
+    \ uses the READ_CONTACTS permission and both your minSdkVersion and targetSdkVersion\
+    \ values are set to 15 or lower, the system implicitly grants your app this permission.\
+    \ If you don't need this permission, be sure your targetSdkVersion is 16 or higher. "
+  Protection_level: 'dangerous '
+  Is_Deprecated: false
+READ_CONTACTS:
+  api_name: READ_CONTACTS
+  num: 106
+  api_level: '1'
+  Description: "Allows an application to read the user's contacts data. "
+  Protection_level: dangerous
+  Is_Deprecated: false
+READ_EXTERNAL_STORAGE:
+  api_name: READ_EXTERNAL_STORAGE
+  num: 107
+  api_level: '16'
+  Description: 'Allows an application to read from external storage. '
+  Protection_level: dangerous
+  Is_Deprecated: false
+READ_INPUT_STATE:
+  api_name: READ_INPUT_STATE
+  num: 108
+  api_level: '1'
+  Description: '        This constant was deprecated      in API level 16.    The
+    API that used this permission has been removed.    '
+  Protection_level: This permission was deprecated
+  Is_Deprecated: true
+READ_LOGS:
+  api_name: READ_LOGS
+  num: 109
+  api_level: '1'
+  Description: 'Allows an application to read the low-level system log files. '
+  Protection_level: Not for use by third-party applications
+  Is_Deprecated: false
+READ_PHONE_NUMBERS:
+  api_name: READ_PHONE_NUMBERS
+  num: 110
+  api_level: '26'
+  Description: "Allows read access to the device's phone number(s). This is a subset\
+    \ of the capabilities granted by READ_PHONE_STATE but is exposed to instant applications. "
+  Protection_level: dangerous
+  Is_Deprecated: false
+READ_PHONE_STATE:
+  api_name: READ_PHONE_STATE
+  num: 111
+  api_level: '1'
+  Description: "Allows read only access to phone state, including the current cellular\
+    \ network information, the status of any ongoing calls, and a list of any PhoneAccounts\
+    \ registered on the device. Note: If both your minSdkVersion and targetSdkVersion\
+    \ values are set to 3 or lower, the system implicitly grants your app this permission.\
+    \ If you don't need this permission, be sure your targetSdkVersion is 4 or higher. "
+  Protection_level: dangerous
+  Is_Deprecated: false
+READ_PRECISE_PHONE_STATE:
+  api_name: READ_PRECISE_PHONE_STATE
+  num: 112
+  api_level: '30'
+  Description: 'Allows read only access to precise phone state. Allows reading of
+    detailed information about phone state for special-use applications such as dialers,
+    carrier applications, or ims applications.          '
+  Protection_level: Not for use by third-party applications
+  Is_Deprecated: false
+READ_SMS:
+  api_name: READ_SMS
+  num: 113
+  api_level: '1'
+  Description: 'Allows an application to read SMS messages. '
+  Protection_level: 'dangerous '
+  Is_Deprecated: false
+READ_SYNC_SETTINGS:
+  api_name: READ_SYNC_SETTINGS
+  num: 114
+  api_level: '1'
+  Description: 'Allows applications to read the sync settings. '
+  Protection_level: normal
+  Is_Deprecated: false
+READ_SYNC_STATS:
+  api_name: READ_SYNC_STATS
+  num: 115
+  api_level: '1'
+  Description: 'Allows applications to read the sync stats. '
+  Protection_level: normal
+  Is_Deprecated: false
+READ_VOICEMAIL:
+  api_name: READ_VOICEMAIL
+  num: 116
+  api_level: '21'
+  Description: 'Allows an application to read voicemails in the system. '
+  Protection_level: signature|privileged
+  Is_Deprecated: false
+REBOOT:
+  api_name: REBOOT
+  num: 117
+  api_level: '1'
+  Description: 'Required to be able to reboot the device. '
+  Protection_level: Not for use by third-party applications
+  Is_Deprecated: false
+RECEIVE_BOOT_COMPLETED:
+  api_name: RECEIVE_BOOT_COMPLETED
+  num: 118
+  api_level: '1'
+  Description: "Allows an application to receive the Intent.ACTION_BOOT_COMPLETED\
+    \ that is broadcast after the system finishes booting.  If you don't request this\
+    \ permission, you will not receive the broadcast at that time.  Though holding\
+    \ this permission does not have any security implications, it can have a negative\
+    \ impact on the user experience by increasing the amount of time it takes the\
+    \ system to start and allowing applications to have themselves running without\
+    \ the user being aware of them.  As such, you must explicitly declare your use\
+    \ of this facility to make that visible to the user. "
+  Protection_level: normal
+  Is_Deprecated: false
+RECEIVE_MMS:
+  api_name: RECEIVE_MMS
+  num: 119
+  api_level: '1'
+  Description: 'Allows an application to monitor incoming MMS messages. '
+  Protection_level: 'dangerous '
+  Is_Deprecated: false
+RECEIVE_SMS:
+  api_name: RECEIVE_SMS
+  num: 120
+  api_level: '1'
+  Description: 'Allows an application to receive SMS messages. '
+  Protection_level: 'dangerous '
+  Is_Deprecated: false
+RECEIVE_WAP_PUSH:
+  api_name: RECEIVE_WAP_PUSH
+  num: 121
+  api_level: '1'
+  Description: 'Allows an application to receive WAP push messages. '
+  Protection_level: 'dangerous '
+  Is_Deprecated: false
+RECORD_AUDIO:
+  api_name: RECORD_AUDIO
+  num: 122
+  api_level: '1'
+  Description: 'Allows an application to record audio. '
+  Protection_level: dangerous
+  Is_Deprecated: false
+REORDER_TASKS:
+  api_name: REORDER_TASKS
+  num: 123
+  api_level: '1'
+  Description: 'Allows an application to change the Z-order of tasks. '
+  Protection_level: normal
+  Is_Deprecated: false
+REQUEST_COMPANION_RUN_IN_BACKGROUND:
+  api_name: REQUEST_COMPANION_RUN_IN_BACKGROUND
+  num: 124
+  api_level: '26'
+  Description: 'Allows a companion app to run in the background. '
+  Protection_level: normal
+  Is_Deprecated: false
+REQUEST_COMPANION_USE_DATA_IN_BACKGROUND:
+  api_name: REQUEST_COMPANION_USE_DATA_IN_BACKGROUND
+  num: 125
+  api_level: '26'
+  Description: 'Allows a companion app to use data in the background. '
+  Protection_level: normal
+  Is_Deprecated: false
+REQUEST_DELETE_PACKAGES:
+  api_name: REQUEST_DELETE_PACKAGES
+  num: 126
+  api_level: '26'
+  Description: 'Allows an application to request deleting packages. Apps targeting
+    APIs Build.VERSION_CODES.P or greater must hold this permission in order to use
+    Intent.ACTION_UNINSTALL_PACKAGE or PackageInstaller.uninstall(VersionedPackage,
+    IntentSender). '
+  Protection_level: normal
+  Is_Deprecated: false
+REQUEST_IGNORE_BATTERY_OPTIMIZATIONS:
+  api_name: REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+  num: 127
+  api_level: '23'
+  Description: 'Permission an application must hold in order to use Settings.ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS. '
+  Protection_level: normal
+  Is_Deprecated: false
+REQUEST_INSTALL_PACKAGES:
+  api_name: REQUEST_INSTALL_PACKAGES
+  num: 128
+  api_level: '23'
+  Description: 'Allows an application to request installing packages. Apps targeting
+    APIs greater than 25 must hold this permission in order to use Intent.ACTION_INSTALL_PACKAGE. '
+  Protection_level: signature
+  Is_Deprecated: false
+REQUEST_PASSWORD_COMPLEXITY:
+  api_name: REQUEST_PASSWORD_COMPLEXITY
+  num: 129
+  api_level: '29'
+  Description: 'Allows an application to request the screen lock complexity and prompt
+    users to update the screen lock to a certain complexity level. '
+  Protection_level: normal
+  Is_Deprecated: false
+RESTART_PACKAGES:
+  api_name: RESTART_PACKAGES
+  num: 130
+  api_level: '1'
+  Description: '        This constant was deprecated      in API level 15.    The
+    ActivityManager.restartPackage(String) API is no longer supported.    '
+  Protection_level: This permission was deprecated
+  Is_Deprecated: true
+SEND_RESPOND_VIA_MESSAGE:
+  api_name: SEND_RESPOND_VIA_MESSAGE
+  num: 131
+  api_level: '18'
+  Description: 'Allows an application (Phone) to send a request to other applications
+    to handle the respond-via-message action during incoming calls. '
+  Protection_level: Not for use by third-party applications
+  Is_Deprecated: false
+SEND_SMS:
+  api_name: SEND_SMS
+  num: 132
+  api_level: '1'
+  Description: 'Allows an application to send SMS messages. '
+  Protection_level: 'dangerous '
+  Is_Deprecated: false
+SET_ALARM:
+  api_name: SET_ALARM
+  num: 133
+  api_level: '9'
+  Description: 'Allows an application to broadcast an Intent to set an alarm for the
+    user. '
+  Protection_level: normal
+  Is_Deprecated: false
+SET_ALWAYS_FINISH:
+  api_name: SET_ALWAYS_FINISH
+  num: 134
+  api_level: '1'
+  Description: 'Allows an application to control whether activities are immediately
+    finished when put in the background. '
+  Protection_level: Not for use by third-party applications
+  Is_Deprecated: false
+SET_ANIMATION_SCALE:
+  api_name: SET_ANIMATION_SCALE
+  num: 135
+  api_level: '1'
+  Description: 'Modify the global animation scaling factor. '
+  Protection_level: Not for use by third-party applications
+  Is_Deprecated: false
+SET_DEBUG_APP:
+  api_name: SET_DEBUG_APP
+  num: 136
+  api_level: '1'
+  Description: 'Configure an application for debugging. '
+  Protection_level: Not for use by third-party applications
+  Is_Deprecated: false
+SET_PREFERRED_APPLICATIONS:
+  api_name: SET_PREFERRED_APPLICATIONS
+  num: 137
+  api_level: '1'
+  Description: '        This constant was deprecated      in API level 15.    No longer
+    useful, see PackageManager.addPackageToPreferred(String) for details.    '
+  Protection_level: This permission was deprecated
+  Is_Deprecated: true
+SET_PROCESS_LIMIT:
+  api_name: SET_PROCESS_LIMIT
+  num: 138
+  api_level: '1'
+  Description: 'Allows an application to set the maximum number of (not needed) application
+    processes that can be running. '
+  Protection_level: Not for use by third-party applications
+  Is_Deprecated: false
+SET_TIME:
+  api_name: SET_TIME
+  num: 139
+  api_level: '8'
+  Description: 'Allows applications to set the system time directly. '
+  Protection_level: Not for use by third-party applications
+  Is_Deprecated: false
+SET_TIME_ZONE:
+  api_name: SET_TIME_ZONE
+  num: 140
+  api_level: '1'
+  Description: 'Allows applications to set the system time zone directly. '
+  Protection_level: Not for use by third-party applications
+  Is_Deprecated: false
+SET_WALLPAPER:
+  api_name: SET_WALLPAPER
+  num: 141
+  api_level: '1'
+  Description: 'Allows applications to set the wallpaper. '
+  Protection_level: normal
+  Is_Deprecated: false
+SET_WALLPAPER_HINTS:
+  api_name: SET_WALLPAPER_HINTS
+  num: 142
+  api_level: '1'
+  Description: 'Allows applications to set the wallpaper hints. '
+  Protection_level: normal
+  Is_Deprecated: false
+SIGNAL_PERSISTENT_PROCESSES:
+  api_name: SIGNAL_PERSISTENT_PROCESSES
+  num: 143
+  api_level: '1'
+  Description: 'Allow an application to request that a signal be sent to all persistent
+    processes. '
+  Protection_level: Not for use by third-party applications
+  Is_Deprecated: false
+SMS_FINANCIAL_TRANSACTIONS:
+  api_name: SMS_FINANCIAL_TRANSACTIONS
+  num: 144
+  api_level: '29'
+  Description: 'Allows financial apps to read filtered sms messages. Protection level:
+    signature|appop          '
+  Protection_level: signature|appop
+  Is_Deprecated: false
+START_VIEW_PERMISSION_USAGE:
+  api_name: START_VIEW_PERMISSION_USAGE
+  num: 145
+  api_level: '29'
+  Description: 'Allows the holder to start the permission usage screen for an app. '
+  Protection_level: signature|installer
+  Is_Deprecated: false
+STATUS_BAR:
+  api_name: STATUS_BAR
+  num: 146
+  api_level: '1'
+  Description: 'Allows an application to open, close, or disable the status bar and
+    its icons. '
+  Protection_level: Not for use by third-party applications
+  Is_Deprecated: false
+SYSTEM_ALERT_WINDOW:
+  api_name: SYSTEM_ALERT_WINDOW
+  num: 147
+  api_level: '1'
+  Description: "Allows an app to create windows using the type WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY,\
+    \ shown on top of all other apps.  Very few apps should use this permission; these\
+    \ windows are intended for system-level interaction with the user. Note: If the\
+    \ app targets API level 23 or higher, the app user must explicitly grant this\
+    \ permission to the app through a permission management screen. The app requests\
+    \ the user's approval by sending an intent with action Settings.ACTION_MANAGE_OVERLAY_PERMISSION.\
+    \ The app can check whether it has this authorization by calling Settings.canDrawOverlays(). "
+  Protection_level: signature|preinstalled|appop|pre23|development
+  Is_Deprecated: false
+TRANSMIT_IR:
+  api_name: TRANSMIT_IR
+  num: 148
+  api_level: '19'
+  Description: "Allows using the device's IR transmitter, if available. "
+  Protection_level: normal
+  Is_Deprecated: false
+UNINSTALL_SHORTCUT:
+  api_name: UNINSTALL_SHORTCUT
+  num: 149
+  api_level: '19'
+  Description: "Don't use this permission in your app.This permission is no longer\
+    \ supported.          "
+  Protection_level: Not for use by third-party applications
+  Is_Deprecated: false
+UPDATE_DEVICE_STATS:
+  api_name: UPDATE_DEVICE_STATS
+  num: 150
+  api_level: '3'
+  Description: 'Allows an application to update device statistics. '
+  Protection_level: Not for use by third-party applications
+  Is_Deprecated: false
+USE_BIOMETRIC:
+  api_name: USE_BIOMETRIC
+  num: 151
+  api_level: '28'
+  Description: 'Allows an app to use device supported biometric modalities. '
+  Protection_level: normal
+  Is_Deprecated: false
+USE_FINGERPRINT:
+  api_name: USE_FINGERPRINT
+  num: 152
+  api_level: '23'
+  Description: '        This constant was deprecated      in API level 28.    Applications
+    should request USE_BIOMETRIC instead    '
+  Protection_level: normal
+  Is_Deprecated: true
+USE_FULL_SCREEN_INTENT:
+  api_name: USE_FULL_SCREEN_INTENT
+  num: 153
+  api_level: '29'
+  Description: 'Required for apps targeting Build.VERSION_CODES.Q that want to use
+    notification full screen intents. '
+  Protection_level: normal
+  Is_Deprecated: false
+USE_SIP:
+  api_name: USE_SIP
+  num: 154
+  api_level: '9'
+  Description: 'Allows an application to use SIP service. '
+  Protection_level: dangerous
+  Is_Deprecated: false
+VIBRATE:
+  api_name: VIBRATE
+  num: 155
+  api_level: '1'
+  Description: 'Allows access to the vibrator. '
+  Protection_level: normal
+  Is_Deprecated: false
+WAKE_LOCK:
+  api_name: WAKE_LOCK
+  num: 156
+  api_level: '1'
+  Description: 'Allows using PowerManager WakeLocks to keep processor from sleeping
+    or screen from dimming. '
+  Protection_level: normal
+  Is_Deprecated: false
+WRITE_APN_SETTINGS:
+  api_name: WRITE_APN_SETTINGS
+  num: 157
+  api_level: '1'
+  Description: 'Allows applications to write the apn settings and read sensitive fields
+    of an existing apn settings like user and password. '
+  Protection_level: Not for use by third-party applications
+  Is_Deprecated: false
+WRITE_CALENDAR:
+  api_name: WRITE_CALENDAR
+  num: 158
+  api_level: '1'
+  Description: "Allows an application to write the user's calendar data. "
+  Protection_level: dangerous
+  Is_Deprecated: false
+WRITE_CALL_LOG:
+  api_name: WRITE_CALL_LOG
+  num: 159
+  api_level: '16'
+  Description: "Allows an application to write (but not read) the user's call log\
+    \ data. Note: If your app uses the WRITE_CONTACTS permission and both your minSdkVersion\
+    \ and targetSdkVersion values are set to 15 or lower, the system implicitly grants\
+    \ your app this permission. If you don't need this permission, be sure your targetSdkVersion\
+    \ is 16 or higher. "
+  Protection_level: 'dangerous '
+  Is_Deprecated: false
+WRITE_CONTACTS:
+  api_name: WRITE_CONTACTS
+  num: 160
+  api_level: '1'
+  Description: "Allows an application to write the user's contacts data. "
+  Protection_level: dangerous
+  Is_Deprecated: false
+WRITE_EXTERNAL_STORAGE:
+  api_name: WRITE_EXTERNAL_STORAGE
+  num: 161
+  api_level: '4'
+  Description: "Allows an application to write to external storage. Note: If both\
+    \ your minSdkVersion and targetSdkVersion values are set to 3 or lower, the system\
+    \ implicitly grants your app this permission. If you don't need this permission,\
+    \ be sure your targetSdkVersion is 4 or higher. "
+  Protection_level: dangerous
+  Is_Deprecated: false
+WRITE_GSERVICES:
+  api_name: WRITE_GSERVICES
+  num: 162
+  api_level: '1'
+  Description: 'Allows an application to modify the Google service map. '
+  Protection_level: Not for use by third-party applications
+  Is_Deprecated: false
+WRITE_SECURE_SETTINGS:
+  api_name: WRITE_SECURE_SETTINGS
+  num: 163
+  api_level: '3'
+  Description: 'Allows an application to read or write the secure system settings. '
+  Protection_level: Not for use by third-party applications
+  Is_Deprecated: false
+WRITE_SETTINGS:
+  api_name: WRITE_SETTINGS
+  num: 164
+  api_level: '1'
+  Description: "Allows an application to read or write the system settings. Note:\
+    \ If the app targets API level 23 or higher, the app user must explicitly grant\
+    \ this permission to the app through a permission management screen. The app requests\
+    \ the user's approval by sending an intent with action Settings.ACTION_MANAGE_WRITE_SETTINGS.\
+    \ The app can check whether it has this authorization by calling Settings.System.canWrite(). "
+  Protection_level: signature|preinstalled|appop|pre23
+  Is_Deprecated: false
+WRITE_SYNC_SETTINGS:
+  api_name: WRITE_SYNC_SETTINGS
+  num: 165
+  api_level: '1'
+  Description: 'Allows applications to write the sync settings. '
+  Protection_level: normal
+  Is_Deprecated: false
+WRITE_VOICEMAIL:
+  api_name: WRITE_VOICEMAIL
+  num: 166
+  api_level: '21'
+  Description: 'Allows an application to modify and remove existing voicemails in
+    the system. '
+  Protection_level: signature|privileged
+  Is_Deprecated: false
